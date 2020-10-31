@@ -2,6 +2,161 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Lora', serif;
 }
 
+#root {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input {
+  border: 1px dotted blue;
+  outline: none;
+  padding: 2px 7px;
+}
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+  border-top: 10px solid #404040;
+  border-bottom: 2px solid #a9a9a9;
+  padding: 25px 5px;
+  margin: 50px auto 20px;
+}
+
+.general-info * {
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.general-info input[type='text']::placeholder {
+  font-size: 40px;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+#nameInput {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#phoneInput,
+#emailInput {
+  font-size: 16px;
+  color: #505050;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.employer-container,
+.job-info {
+  margin-bottom: 10px;
+}
+
+.employer-container {
+  max-width: 300px;
+}
+
+#employerInput {
+  font-size: 18px;
+  font-weight: bold;
+  color: #808080;
+  width: 100%;
+}
+
+.job-info > input {
+  font-style: italic;
+  color: #808080;
+  font-size: 15px;
+}
+
+#titleInput {
+  width: 200px;
+}
+
+#locationInput {
+  width: 220px;
+}
+
+#dateInput {
+  width: 300px;
+}
+
+.divider {
+  color: #808080;
+  font-size: 13px;
+}
+
+.add-task {
+  padding: 5px 0px;
+  position: relative;
+  cursor: pointer;
+  color: #808080;
+  width: 150px;
+  margin-left: 40px;
+}
+
+.plus-sign {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.job-desc {
+  display: inline-block;
+  font-size: 14px;
+  top: 9px;
+  position: absolute;
+}
+
+#taskInput {
+  width: 700px;
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.desc-list {
+  color: #808080;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  width: 700px;
+}
+
+.desc-list li {
+  padding: 3px;
+}
+
+.del-task {
+  float: right;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.del-task:hover {
+  color: red;
+}

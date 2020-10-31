@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './GeneralInfo.css';
 
 class GeneralInfo extends Component {
   constructor() {
