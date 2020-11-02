@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import BasicInfo from './components/BasicInfo';
 import WorkHeading from './layout/WorkHeading';
-import AddWorkBtn from './components/AddWorkBtn';
+import Modal from './components/Modal';
+import WorkHist from './components/WorkHist';
 
 class App extends Component {
   render() {
@@ -10,7 +11,9 @@ class App extends Component {
       <div className="app">
         <BasicInfo />
         <WorkHeading />
-        <AddWorkBtn />
+        <Modal />
+        <WorkHist />
+        
       </div>
     );
   }
