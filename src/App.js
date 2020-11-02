@@ -1,19 +1,13 @@
-import './App.css';
 import React, { Component } from 'react';
-import GeneralInfo from './components/GeneralInfo';
-import WorkHist from './components/WorkHist';
-
+import BasicInfo from './components/BasicInfo';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <form id="form">
-        <GeneralInfo />
-        <div className="work-history">
-          <h2>Work History</h2>
-        </div>
-        <WorkHist />
-      </form>
+      <div className="app">
+        <BasicInfo />
+      </div>
     );
   }
 }
