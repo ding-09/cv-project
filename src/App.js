@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import BasicInfo from './components/BasicInfo';
+import BasicInfo from './components/GeneralInfo/BasicInfo';
+import WorkHist from './components/WorkInfo/WorkHist';
+import EducationInfo from './components/EducationInfo/Education';
 import WorkHeading from './layout/WorkHeading';
-import WorkHist from './components/WorkHist';
+import EducationalHeading from './layout/EducationHeading';
 
 class App extends Component {
   render() {
@@ -11,7 +13,8 @@ class App extends Component {
         <BasicInfo />
         <WorkHeading />
         <WorkHist />
-    
+        <EducationalHeading />
+        <EducationInfo />
       </div>
     );
   }

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import AddWorkBtn from './AddWorkBtn';
+import AddEducationBtn from './AddEducationBtn';
 import Modal from './Modal';
-import DisplayWorkHist from './DisplayWorkHist';
+import DisplayEducHist from './DisplayEducHist'
 
-class WorkHist extends Component {
+class Education extends Component {
   constructor() {
     super();
 
     this.state = {
       modalDisplay: false,
-      workHistory: [],
+      education: [],
     };
   }
 
@@ -25,28 +25,27 @@ class WorkHist extends Component {
     });
   };
 
-  addWorkHist = (workHist) => {
-    const newWorkHist = workHist;
+  addEducHist = (educHist) => {
+    const newEducHist = educHist;
     this.setState({
-      workHistory: [...this.state.workHistory, newWorkHist],
+      education: [...this.state.education, newEducHist],
       modalDisplay: false,
     });
   };
 
   render() {
     return (
-      <div className="work-exp-container">
-        <DisplayWorkHist works={this.state.workHistory} />
+      <div className="section-container">
+        <DisplayEducHist educations={this.state.education} />
         <Modal
           display={this.state.modalDisplay}
           closeModal={this.closeModal}
-          addWorkHist={this.addWorkHist}
+          addEducHist={this.addEducHist}
         />
-        <AddWorkBtn displayModal={this.displayModal} />
-  
+        <AddEducationBtn displayModal={this.displayModal} />
       </div>
     );
   }
 }
 
-export default WorkHist;
+export default Education;
