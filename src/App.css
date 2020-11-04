@@ -26,6 +26,13 @@ html, body {
   color: #000000;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 input:not([type='submit']) {
   width: 100%;
   font-size: 15px;
@@ -112,7 +119,6 @@ input:not([type='submit']):hover {
   margin: 5px auto 10px;
   color: #303030;
   border-radius: 5px;
-  border: 1px solid red;
 }
 
 .modal-content {
@@ -192,7 +198,7 @@ span {
 
 .rendered-info {
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .work-hist-display * {

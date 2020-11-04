@@ -16,12 +16,14 @@ class WorkExp extends Component {
     } = this.props.work;
 
     return (
-      <div className="work-hist-display">
-        <h4 className="job-title-dist">{jobTitle}</h4>
-        <p className="date-worked-dist">{dateWorked}</p>
-        <p className="employer-dist">{employer}</p>
-        <p className="location-dist">{location}</p>
-        <div className="formatted-list"><FormatDesc desc={description} /></div>
+      <div className="rendered-info">
+        <h4 className="main-title-dist">{jobTitle}</h4>
+        <p className="date-dist">{dateWorked}</p>
+        <p className="sub-info">{employer}</p>
+        <p className="sub-info">{location}</p>
+        <div className="formatted-list">
+          <FormatDesc desc={description} />
+        </div>
       </div>
     );
   }
