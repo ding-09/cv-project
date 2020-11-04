@@ -74,13 +74,13 @@ class Modal extends Component {
             <label htmlFor="degree">Degree</label>
             <div className="select-container">
               <select name="degree" id="degree" onChange={this.handleChange}>
-                <option value="none">None</option>
-                <option value="hs-eq">High school or equivalent</option>
-                <option value="associate">Associate</option>
-                <option value="bachelor">Bachelor's</option>
-                <option value="master">Master's</option>
-                <option value="doctorate">Doctorate</option>
-                <option value="other">Other</option>
+                <option>None</option>
+                <option>High school or equivalent</option>
+                <option>Associate</option>
+                <option>Bachelor's</option>
+                <option>Master's</option>
+                <option>Doctorate</option>
+                <option>Other</option>
               </select>
             </div>
           </div>
