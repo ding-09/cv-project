@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AddWorkBtn from './AddWorkBtn';
 import Modal from './Modal';
+import DisplayWorkHist from './DisplayWorkHist';
 
 class WorkHist extends Component {
   constructor() {
@@ -24,11 +25,25 @@ class WorkHist extends Component {
     });
   };
 
+  addWorkHist = (workHist) => {
+    const newWorkHist = workHist;
+    this.setState({
+      workHistory: [...this.state.workHistory, newWorkHist],
+      modalDisplay: false,
+    });
+  };
+
   render() {
     return (
       <div className="work-exp-container">
-        <Modal display={this.state.modalDisplay} closeModal={this.closeModal} />
+        <DisplayWorkHist works={this.state.workHistory} />
+        <Modal
+          display={this.state.modalDisplay}
+          closeModal={this.closeModal}
+          addWorkHist={this.addWorkHist}
+        />
         <AddWorkBtn displayModal={this.displayModal} />
+  
       </div>
     );
   }

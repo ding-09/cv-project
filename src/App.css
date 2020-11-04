@@ -21,6 +21,7 @@
 
 input:not([type='submit']) {
   width: 100%;
+  font-size: 15px;
 }
 
 input:not([type='submit']):hover {
@@ -117,7 +118,7 @@ input:not([type='submit']):hover {
   padding-bottom: 5px;
 }
 
-.modal-content > div {
+.form-group {
   margin-bottom: 10px;
 }
 
@@ -127,7 +128,6 @@ input:not([type='submit']):hover {
   border-radius: 5px;
   border: 1px solid #808080;
   padding-left: 5px;
-  font-size: 16px;
   outline: none;
 }
 
@@ -161,19 +161,51 @@ span {
   margin: 5px 15px 5px 0px;
   border-radius: 25px;
   border: none;
+  outline: none;
   color: white;
   background-color: #0070e0;
   font-weight: 800;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .close-modal-btn {
   width: 95px;
   height: 40px;
   border-radius: 25px;
+  outline: none;
   border: 2px solid #cacaca;
   background-color: #ffffff;
   font-weight: 800;
   font-size: 15px;
   color: #0070e0;
+  cursor: pointer;
+}
+
+.work-hist-display {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.work-hist-display * {
+  margin-bottom: 5px;
+}
+
+.job-title-dist {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.date-worked-dist {
+  color: #808080;
+  font-size: 13px;
+}
+
+.employer-dist, .location-dist {
+  font-size: 14px;
+}
+
+.formatted-list {
+  padding-left: 20px;
+  font-size: 13px;
 }
