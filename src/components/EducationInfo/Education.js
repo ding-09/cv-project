@@ -33,10 +33,18 @@ class Education extends Component {
     });
   };
 
+  deleteHist = (id) => {
+    this.setState({
+      education: [
+        ...this.state.education.filter((edu) => edu.id !== id),
+      ],
+    });
+  };
+
   render() {
     return (
       <div className="section-container">
-        <DisplayEducHist educations={this.state.education} />
+        <DisplayEducHist educations={this.state.education} deleteHist={this.deleteHist}/>
         <Modal
           display={this.state.modalDisplay}
           closeModal={this.closeModal}

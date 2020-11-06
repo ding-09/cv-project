@@ -11,6 +11,7 @@ class Modal extends Component {
       dateWorked: '',
       location: '',
       description: '',
+      id: ''
     };
   }
 

@@ -8,7 +8,7 @@ class DisplayWorkHist extends Component {
 
   render() {
     return this.props.works.map((work) => (
-        <WorkExp key={work.id} work={work}/>
+        <WorkExp key={work.id} work={work} deleteHist={this.props.deleteHist}/>
     ));
   }
 }

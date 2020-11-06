@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DeleteBtn from './DeleteBtn';
 
 class EducationHist extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ class EducationHist extends Component {
       location,
       degree,
       studyField,
+      id,
     } = this.props.education;
 
     return (
@@ -21,6 +23,7 @@ class EducationHist extends Component {
         <p className="sub-info">{studyField}</p>
         <p className="sub-info">{location}</p>
         <p className="date-dist">{dateAttended}</p>
+        <DeleteBtn id={id} deleteHist={this.props.deleteHist} />
       </div>
     );
   }

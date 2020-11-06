@@ -33,14 +33,23 @@ class WorkHist extends Component {
     });
   };
 
+  deleteHist = (id) => {
+    this.setState({
+      workHistory: [
+        ...this.state.workHistory.filter((history) => history.id !== id),
+      ],
+    });
+  };
+
   render() {
     return (
       <div className="section-container">
-        <DisplayWorkHist works={this.state.workHistory} />
+        <DisplayWorkHist works={this.state.workHistory} deleteHist={this.deleteHist}/>
         <Modal
           display={this.state.modalDisplay}
           closeModal={this.closeModal}
           addWorkHist={this.addWorkHist}
+
         />
         <AddWorkBtn displayModal={this.displayModal} />
       </div>

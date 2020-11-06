@@ -8,7 +8,7 @@ class DisplayEducHist extends Component {
 
     render() {
         return this.props.educations.map((education) => (
-            <EducationHist key={education.id} education={education} />
+            <EducationHist key={education.id} education={education} deleteHist={this.props.deleteHist}/>
         ));
     }
 }

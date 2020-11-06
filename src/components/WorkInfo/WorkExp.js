@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormatDesc from './FormatDesc';
+import DeleteBtn from './DeleteBtn';
 
 class WorkExp extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class WorkExp extends Component {
       location,
       dateWorked,
       description,
+      id,
     } = this.props.work;
 
     return (
@@ -24,6 +26,7 @@ class WorkExp extends Component {
         <div className="formatted-list">
           <FormatDesc desc={description} />
         </div>
+        <DeleteBtn id={id} deleteHist={this.props.deleteHist} />
       </div>
     );
   }
